@@ -16,7 +16,7 @@ define([
 
         id: 'diffPhotos',
 
-        className: 'imageReveal',
+        className: 'imageReveal col-xs-12',
 
         events: {},
 
@@ -41,6 +41,10 @@ define([
                 width: 910,
                 height: 607
             });
+        },
+
+        previous: function() {
+            console.log('previous')
         }
     });
 

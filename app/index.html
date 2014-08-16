@@ -23,31 +23,30 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">HDR DIFF</a></li>
-                    <li><a href="#photos">About</a></li>
+                    <li class="active">
+                        <button role="previous" class="btn btn-default">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button role="next" class="btn btn-default">
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </button>
+                    </li>
                 </ul>
-                <h3 class="text-muted">HDR DIFF</h3>
+                <h3 class="text-muted">HDR Photos</h3>
             </div>
 
             <div class="row compare-photos-section">
             </div>
 
             <div class="footer">
-                <p>&#x2665; backbone.js &#x2665;</p>
+                <p>What is <a href="http://en.wikipedia.org/wiki/High-dynamic-range_imaging" target="_blank">High-dynamic-range imaging</a>? (wikipedia)</p>
+                <p>by <a href="http://saitodisse.github.io/">saitodisse</a></p>
+                <p>&#x2665; backbone.js, yeoman, bootstrap, SCSS, handlebars, grunt, bower, github, jquery-image-reveal, require.js &#x2665;</p>
             </div>
 
         </div>
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
 
         <!-- build:js scripts/main.js -->
         <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>

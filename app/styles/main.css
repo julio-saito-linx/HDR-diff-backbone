@@ -6,3 +6,15 @@ body {
     margin: 50px auto 0 auto;
     width: 300px;
 }
+
+.row { float: left; }
+.imageReveal { margin-right: 20px; }
+.row.small .imageReveal { display: inline-block; }
+.row.small .imageReveal-caption { top: auto; bottom: 20px; }
+.imageReveal-caption { text-indent: 1000; overflow: hidden; transition: text-indent 2s;}
+
+
+.compare-photos-section img {
+	position: absolute;
+	margin: 0 auto;
+}
