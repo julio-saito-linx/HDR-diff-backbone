@@ -16,14 +16,8 @@ define([
             name: 'photo name',
             urlBefore: '',
             urlAfter: ''
-        },
-
-        validate: function(attrs, options) {
-        },
-
-        parse: function(response, options)  {
-            return response;
         }
+
     });
 
     return PhotoModel;

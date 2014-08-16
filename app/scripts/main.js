@@ -10,7 +10,7 @@ require.config({
         handlebars: {
             exports: 'Handlebars'
         },
-        image_reveal: {
+        imageReveal: {
             deps: ['jquery']
         }
     },
@@ -20,7 +20,7 @@ require.config({
         underscore: '../bower_components/lodash/dist/lodash',
         bootstrap: '../bower_components/sass-bootstrap/dist/js/bootstrap',
         handlebars: '../bower_components/handlebars/handlebars',
-        image_reveal: 'vendor/jquery.imageReveal'
+        imageReveal: 'vendor/jquery.imageReveal'
     }
 });
 
@@ -33,15 +33,15 @@ require([
     var photoModel = new Photo({
         urlBefore: '/images/Xuxu/IMG_9109.JPG',
         urlAfter: '/images/Xuxu/IMG_9109_10_11_tonemapped.JPG'
-    })
+    });
 
     // start the view
     var diffView = new DiffView({
         model: photoModel
-    })
+    });
 
     diffView.render();
-    $('.compare-photos-section').html(diffView.el)
+    $('.compare-photos-section').html(diffView.el);
 
     Backbone.history.start();
 });

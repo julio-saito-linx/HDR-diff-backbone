@@ -1,26 +1,45 @@
 <!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Mocha Spec Runner</title>
-    <link rel="stylesheet" href="bower_components/mocha/mocha.css">
-</head>
-<body>
-    <div id="mocha"></div>
-    <script src="bower_components/mocha/mocha.js"></script>
-    <script>mocha.setup('bdd')</script>
-    <script src="bower_components/chai/chai.js"></script>
-    <script>
-        var assert = chai.assert;
-        var expect = chai.expect;
-        var should = chai.should();
-    </script>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HdrBackboneAproach</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="dist/styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="dist/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <!-- include source files here... -->
 
-    <!-- include spec files here... -->
-    <script src="spec/test.js"></script>
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">HDR DIFF</a></li>
+                    <li><a href="#photos">About</a></li>
+                </ul>
+                <h3 class="text-muted">HDR DIFF</h3>
+            </div>
 
-    <script>mocha.run()</script>
+            <div class="row compare-photos-section">
+            </div>
+
+            <div class="footer">
+                <p>&#x2665; backbone.js &#x2665;</p>
+            </div>
+
+        </div>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="dist/scripts/main" src="dist/bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
 </body>
 </html>

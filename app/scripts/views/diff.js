@@ -5,8 +5,8 @@ define([
     'underscore',
     'backbone',
     'templates',
-    'image_reveal'
-], function ($, _, Backbone, JST, image_reveal) {
+    'imageReveal'
+], function ($, _, Backbone, JST, imageReveal) {
     'use strict';
 
     var DiffView = Backbone.View.extend({
@@ -40,7 +40,7 @@ define([
                 linkCaption: true,
                 width: 910,
                 height: 607
-            });            
+            });
         }
     });
 
